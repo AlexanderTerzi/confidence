@@ -1,0 +1,2389 @@
+/* ------ Custom fonts ------ */
+
+@font-face {
+  font-family: 'TTTravels-Bold';
+  src: url('../fonts/TTTravels-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/TTTravels-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/TTTravels-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/TTTravels-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/TTTravels-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/TTTravels-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'TTTravels-DemiBold';
+  src: url('../fonts/TTTravels-DemiBold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/TTTravels-DemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/TTTravels-DemiBold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/TTTravels-DemiBold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/TTTravels-DemiBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/TTTravels-DemiBold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'TTTravels-Regular';
+  src: url('../fonts/TTTravels-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/TTTravels-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/TTTravels-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/TTTravels-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/TTTravels-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/TTTravels-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'TTTravels-Thin';
+  src: url('../fonts/TTTravels-Thin.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/TTTravels-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/TTTravels-Thin.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/TTTravels-Thin.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/TTTravels-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/TTTravels-Thin.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'TTTravels-Light';
+  src: url('../fonts/TTTravels-Light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/TTTravels-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/TTTravels-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/TTTravels-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/TTTravels-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/TTTravels-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+/* ------- Preloader ------- */
+
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 100500;
+}
+
+#page-preloader .spinner {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url('/images/spinner.gif') no-repeat 50% 50%;
+    margin: -16px 0 0 -16px;
+}
+
+.cssload-box-loading {
+  width: 49px;
+  height: 49px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.cssload-box-loading:before {
+  content: '';
+  width: 49px;
+  height: 5px;
+  background: rgb(0,0,0);
+  opacity: 0.1;
+  position: absolute;
+  top: 58px;
+  left: 0;
+  border-radius: 50%;
+  animation: shadow 0.58s linear infinite;
+    -o-animation: shadow 0.58s linear infinite;
+    -ms-animation: shadow 0.58s linear infinite;
+    -webkit-animation: shadow 0.58s linear infinite;
+    -moz-animation: shadow 0.58s linear infinite;
+}
+.cssload-box-loading:after {
+  content: '';
+  width: 49px;
+  height: 49px;
+  background: rgb(160,0,0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 3px;
+  animation: cssload-animate 0.58s linear infinite;
+    -o-animation: cssload-animate 0.58s linear infinite;
+    -ms-animation: cssload-animate 0.58s linear infinite;
+    -webkit-animation: cssload-animate 0.58s linear infinite;
+    -moz-animation: cssload-animate 0.58s linear infinite;
+}
+
+@keyframes cssload-animate {
+  17% {
+    border-bottom-right-radius: 3px;
+  }
+  25% {
+    transform: translateY(9px) rotate(22.5deg);
+  }
+  50% {
+    transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+    border-bottom-right-radius: 39px;
+  }
+  75% {
+    transform: translateY(9px) rotate(67.5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(90deg);
+  }
+}
+
+@-o-keyframes cssload-animate {
+  17% {
+    border-bottom-right-radius: 3px;
+  }
+  25% {
+    -o-transform: translateY(9px) rotate(22.5deg);
+  }
+  50% {
+    -o-transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+    border-bottom-right-radius: 39px;
+  }
+  75% {
+    -o-transform: translateY(9px) rotate(67.5deg);
+  }
+  100% {
+    -o-transform: translateY(0) rotate(90deg);
+  }
+}
+
+@-ms-keyframes cssload-animate {
+  17% {
+    border-bottom-right-radius: 3px;
+  }
+  25% {
+    -ms-transform: translateY(9px) rotate(22.5deg);
+  }
+  50% {
+    -ms-transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+    border-bottom-right-radius: 39px;
+  }
+  75% {
+    -ms-transform: translateY(9px) rotate(67.5deg);
+  }
+  100% {
+    -ms-transform: translateY(0) rotate(90deg);
+  }
+}
+
+@-webkit-keyframes cssload-animate {
+  17% {
+    border-bottom-right-radius: 3px;
+  }
+  25% {
+    -webkit-transform: translateY(9px) rotate(22.5deg);
+  }
+  50% {
+    -webkit-transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+    border-bottom-right-radius: 39px;
+  }
+  75% {
+    -webkit-transform: translateY(9px) rotate(67.5deg);
+  }
+  100% {
+    -webkit-transform: translateY(0) rotate(90deg);
+  }
+}
+
+@-moz-keyframes cssload-animate {
+  17% {
+    border-bottom-right-radius: 3px;
+  }
+  25% {
+    -moz-transform: translateY(9px) rotate(22.5deg);
+  }
+  50% {
+    -moz-transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+    border-bottom-right-radius: 39px;
+  }
+  75% {
+    -moz-transform: translateY(9px) rotate(67.5deg);
+  }
+  100% {
+    -moz-transform: translateY(0) rotate(90deg);
+  }
+}
+
+@keyframes shadow {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1);
+  }
+}
+
+@-o-keyframes shadow {
+  0%,
+  100% {
+    -o-transform: scale(1, 1);
+  }
+  50% {
+    -o-transform: scale(1.2, 1);
+  }
+}
+
+@-ms-keyframes shadow {
+  0%,
+  100% {
+    -ms-transform: scale(1, 1);
+  }
+  50% {
+    -ms-transform: scale(1.2, 1);
+  }
+}
+
+@-webkit-keyframes shadow {
+  0%,
+  100% {
+    -webkit-transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(1.2, 1);
+  }
+}
+
+@-moz-keyframes shadow {
+  0%,
+  100% {
+    -moz-transform: scale(1, 1);
+  }
+  50% {
+    -moz-transform: scale(1.2, 1);
+  }
+}
+
+/* ------ Specification ------ */
+
+body {
+  font-family: 'TTTravels-Regular';
+  color: #000;
+  font-size: 20px;
+  letter-spacing: 0.025em;
+}
+
+div, p, form, input, a, span, button {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  line-height: 1.35;
+}
+
+ul, li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'TTTravels-Bold';
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+h3 {
+  font-size: 27px;
+  font-family: 'TTTravels-DemiBold';
+}
+
+a, a:hover, a:active {
+  text-decoration: none;
+}
+
+a, button, input {
+  transition: all 0.5s ease;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active {
+  outline: none;
+}
+
+.container-fluid, .no-indent {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.no-indent_second {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.btn {
+  background: #a00000;
+  height: 63px;
+  border: 2px solid transparent;
+  border-radius: 0px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'TTTravels-DemiBold';
+  font-size: 18px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  padding: 0;
+  outline: none;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.11);
+}
+
+.btn:hover {
+  color: #000;
+  background: transparent;
+  border: 2px solid #000;
+}
+
+.btn:active {
+  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.3);
+}
+
+.btn-two {
+  background: transparent;
+  color: #000;
+  height: 63px;
+  border: 2px solid #000;
+  border-radius: 0px;
+  text-transform: uppercase;
+  font-family: 'TTTravels-DemiBold';
+  font-size: 18px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  padding: 0;
+  outline: none;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.11);
+}
+
+.btn-two:hover {
+  color: #fff;
+  background: #000;
+}
+
+.btn-two:active {
+  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.3);
+}
+
+.tel {
+  font-family: 'TTTravels-DemiBold';
+  color: #e00303;
+  border-bottom: 1px solid transparent;
+}
+
+.tel:hover {
+  color: #e00303;
+  border-bottom: 1px solid #e00303;
+}
+
+/* ------- MAIN PAGE ------- */
+/* ------- Header section ------- */
+
+.header-fixed {
+  position: fixed;
+  z-index: 999;
+  background: #fff;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+.sticky {
+  transition: all 0.5s ease;
+}
+
+.header {
+  padding-top: 184px;
+  transition: all 0.5s ease;
+}
+
+.header-top__logo {
+  display: block;
+  margin-left: -7px;
+  margin-top: 54px;
+}
+
+.menu {
+  margin-left: 38px;
+}
+
+.menu__list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+.menu__link {
+  display: block;
+  color: #000;
+  padding: 80px 14px 79px 14px;
+}
+
+.menu__link:hover {
+  color: #e00303;
+  background: #f9f9f9;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.11);
+}
+
+.header-contacts {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  width: 240px;
+  margin-top: 71px;
+  transition: all 0.5s ease;
+}
+
+.header-contacts__tel {
+  font-size: 20px;
+  margin-right: 19px;
+  margin-top: 3px;
+}
+
+.header-main {
+  background: url(../img/bg-main.jpg) no-repeat center top / cover;
+  position: relative;
+/*  padding-top: 350px;
+  padding-bottom: 321px;*/
+  height: calc(100vh - 183px);
+  min-height: 580px;
+  padding-top: 23vh;
+}
+
+.header__overlay {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.451);
+}
+
+.header-main__offer {
+  color: #fff;
+}
+
+.header-main__title {
+  margin-bottom: 25px;
+}
+
+.header-main__subtitle {
+  display: block;
+  font-size: 38px;
+}
+
+.header-main__btn {
+  width: 278px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.header-main__btn:hover {
+  background: #7c7c7c;
+  color: #fff;
+  border: 2px solid #7c7c7c;
+}
+
+.header-cards {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  margin-top: 181px;
+}
+
+.header-cards__item {
+  border: 8px solid rgba(249, 249, 249, 0.651);
+  position: relative;
+}
+
+.header-cards__item_second {
+  border-right: none;
+  border-left: none;
+}
+
+.header-cards__overlay {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.menu-open {
+  background: none;
+  border: 0;
+  color: #000;
+  line-height: 1.2;
+  font-size: 26px;
+  cursor: pointer;
+  margin-top: 73px;
+}
+
+.menu-opened {
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.menu__list.menu-opened .menu__item {
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+
+.menu__list.menu-opened .menu__link {
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0 10px;
+}
+
+#header-fixed.sticky {
+  position: fixed;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+#header-fixed.sticky .menu__link {
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+
+#header-fixed.sticky .header-top__logo {
+  margin-top: 7px;
+}
+
+#header-fixed.sticky .header-contacts {
+  margin-top: 29px;
+}
+
+/* ------- About section ------- */
+
+.about {
+  padding-top: 63px;
+}
+
+.about__subtitle {
+  display: block;
+  font-size: 26px;
+  font-family: 'TTTravels-DemiBold';
+  text-transform: uppercase;
+  letter-spacing: 0.018em;
+  margin: 0 auto;
+  margin-top: 31px;
+}
+
+.about__text {
+  width: 1124px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 33px;
+  margin-bottom: 57px;
+}
+
+.about-card__item {
+  width: 370px;
+  height: 304px;
+  position: relative;
+}
+
+.about-card__img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-card__overlay {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.349);
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.09);
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'TTTravels-DemiBold';
+  padding-top: 195px;
+}
+
+.about-card__btn {
+  margin-top: 28px;
+  width: 370px;
+}
+
+/* ------- Counsellor section ------- */
+
+.counsellor {
+  padding-top: 100px;
+  padding-bottom: 45px;
+}
+
+.counsellor__title {
+  margin-left: 30px;
+}
+
+.counsellor__img {
+  margin-top: 48px;
+  box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.11);
+}
+
+.counsellor__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.counsellor__text {
+  margin-top: 43px;
+  width: 861px;
+}
+
+/* ------- Consultation section ------- */
+
+.consultation .container{
+  background: #f6f6f6;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.08);
+  padding-top: 45px;
+  padding-bottom: 44px;
+}
+
+.consultation__subtitle {
+  font-size: 20px;
+  font-family: 'TTTravels-Thin';
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 36px;
+}
+
+.consultation form {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 55px;
+  padding-right: 40px;
+}
+
+.consultation input {
+  width: 329px;
+  height: 55px;
+  border: 1px solid transparent;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.08);
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.consultation input::placeholder {
+  color: #696969;
+}
+
+.consultation input:focus {
+  color: #000;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.38);
+}
+
+.consultation__btn {
+  height: 55px;
+  width: 325px;
+}
+
+.consultation-call__text {
+  display: block;
+  font-size: 20px;
+  font-family: 'TTTravels-Thin';
+  color: #656565;
+  margin-top: 23px;
+  margin-bottom: 16px;
+}
+
+.consultation-call__tel {
+  font-size: 20px;
+}
+
+/* ------- Works section ------- */
+
+.works {
+  padding-top: 100px;
+  padding-bottom: 99px;
+}
+
+.tabs__content {
+  display: none; /* по умолчанию прячем все блоки */
+}
+
+.tabs__content.active {
+  display: block; /* по умолчанию показываем нужный блок */
+}
+
+.tabs__caption {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  margin-top: 32px;
+  margin-bottom: 49px;
+  height: 48px;
+  line-height: 48px;
+}
+
+.tabs__caption .active {
+  color: #a00000;
+  background: #f9f9f9;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.11);
+}
+
+.tabs__caption li {
+  color: #000;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'TTTravels-DemiBold';
+  cursor: pointer;
+  padding: 0px 25px;
+  transition: all 0.4s ease;
+}
+
+.tabs__caption li:hover {
+  color: #a00000;
+}
+
+.grid {
+  display: flex; 
+  flex-direction: column; 
+  flex-wrap: wrap;
+  height: 100vw;
+  max-height: 800px;
+  font-size: 0;  
+}
+
+.grid-hide { 
+  display: none;
+}
+
+.grid-item {
+  width: 32%;
+  padding: 15px;
+}
+
+.works-buttons {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+}
+
+.works-buttons__more {
+  width: 266px;
+  margin-right: 35px;
+}
+
+.works-buttons__order {
+  width: 274px;
+}
+
+/* ------- Reviews section ------- */
+
+.reviews {
+  background: #f9f9f9;
+  padding-top: 94px;
+  padding-bottom: 83px;
+}
+
+.reviews-slider__item {
+  display: -webkit-flex !important;
+  display: -moz-flex !important;
+  display: -ms-flex !important;
+  display: -o-flex !important;
+  display: flex !important;
+  margin-top: 32px;
+  outline: none;
+}
+
+.reviews-slider__img {
+  margin-top: 7px;
+  margin-right: 45px;
+  width: 298px;
+  height: 380px;
+}
+
+.reviews-slider__name {
+  font-size: 23px;
+  font-family: 'TTTravels-Bold';
+  margin-bottom: 10px;
+}
+
+.reviews-slider__position {
+  font-size: 20px;
+  font-family: 'TTTravels-Thin';
+}
+
+.reviews-slider__text {
+  font-size: 20px;
+  margin-top: 20px;
+  width: 663px;
+}
+
+.reviews-slider__link {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+.reviews-slider__link:hover {
+  color: #000;
+  border: none;
+}
+
+.reviews-slider__date {
+  font-size: 17px;
+  margin-top: 17px;
+}
+
+.reviews-slider .slick-dots {
+  position: relative;
+}
+
+.slick-dots li button::before {
+  font-family: slick;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 12px;
+  height: 12px;
+  content: "";
+  opacity: 1;
+  background: #deaeae;
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active button::before {
+  background: #b12f2f;
+}
+
+/*.reviews-slider .slick-dots:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 575px;
+  height: 6px;
+  background-color: rgb(160, 0, 0);
+  opacity: 0.302;
+  left: 341px;
+  top: 20px;
+}*/
+
+/*.reviews-slider .slick-dots li {
+  width: 83px;
+}*/
+
+/*.reviews-slider .slick-dots li button::before {
+  content: '';
+  width: 91px;
+  height: 12px;
+  background: transparent;
+  margin: 0 auto;
+  opacity: 0;
+}*/
+
+/*.reviews-slider .slick-dots li.slick-active button::before {
+  content: '';
+  width: 91px;
+  height: 12px;
+  background: #b12f2f;
+  margin: 0 auto;
+  margin-top: -3px;
+  opacity: 1;
+}*/
+
+/*.reviews-slider .slick-dots li button {
+  width: 0;
+  height: 0;
+  padding: 0;
+}*/
+
+/* ------- Footer section ------- */
+
+.footer {
+  padding-top: 58px;
+  padding-bottom: 50px;
+}
+
+.footer-contacts {
+  margin-top: 20px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.footer-contacts__tel {
+  margin-right: 7px;
+  margin-top: 2px;
+}
+
+.footer-developer {
+  font-size: 17.95px;
+  margin-top: 18px;
+  color: #737373;
+}
+
+.footer-developer__link {
+  color: #ea7575;
+  border-bottom: 1px solid #ea7575;
+}
+
+.footer-developer__link:hover {
+  color: #a00000;
+  border-bottom: 1px solid #a00000;
+}
+
+.footer-info {
+  font-size: 16px;
+  color: #6c6c6c;
+  font-family: 'TTTravels-Thin';
+  margin-top: -4px;
+}
+
+.footer-info__confidential {
+  width: 494px;
+  text-align: center;
+  margin-left: 45px;
+}
+
+.footer-info__link {
+  color: #6c6c6c;
+  border-bottom: 1px solid #6c6c6c;
+}
+
+.footer-info__sale {
+  width: 575px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.footer-credits {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin-top: 27px;
+  color: #737373;
+}
+
+.footer-credits_left {
+  text-align: center;
+  margin-right: 50px;
+}
+
+.footer-credits__link {
+  color: #737373;
+  font-size: 18px;
+}
+
+.footer-credits__rights {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.footer-credits_right {
+  text-align: center;
+  line-height: 2.1;
+}
+
+.footer__brands {
+  margin-top: -14px;
+}
+
+.footer__brands img {
+  display: block;
+  text-align: right;
+}
+
+/* ------- COMMON PAGES STYLES ------- */
+
+.header-secondary {
+  position: relative;
+/*  padding-top: 273px;
+  padding-bottom: 271px;*/
+  color: #fff;
+  height: calc(100vh - 183px);
+  min-height: 580px;
+}
+
+.header-secondary__subtitle {
+  font-size: 28px;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 37px;
+}
+
+.header-secondary__sale {
+  font-size: 19px;
+  display: block;
+  text-align: center;
+  font-family: 'TTTravels-DemiBold';
+  margin-top: 23px;
+/*  margin-bottom: 68px;*/
+}
+
+.header-secondary__sale_big {
+  font-size: 48px;
+}
+
+.button__more {
+  width: 221px;
+}
+
+.order {
+  position: relative;
+  padding-top: 92px;
+  padding-bottom: 100px;
+}
+
+
+/* ------- WINDOWS AND DOORS PAGE ------- */
+
+/* ------- Header section ------- */
+
+.header-windows {
+  background: url(../img/bg-windows.jpg) no-repeat center top / cover;
+  padding-top: 18vh;
+}
+
+/* ------- Windows and doors section ------- */
+
+.windanddoors {
+  padding-top: 88px;
+}
+
+.windanddoors__img {
+  margin-top: 133px;
+}
+
+.windanddoors__img img {
+  display: block;
+  margin-left: 92px;
+}
+
+.windanddoors__documentation {
+  font-size: 18px;
+  font-family: 'TTTravels-Light';
+  color: #4c4c4c;
+  text-decoration: underline;
+  /*border-bottom: 1px solid #d1d1d1;*/
+  text-transform: uppercase;
+  display: block;
+  margin-top: 38px;
+}
+
+.windanddoors__documentation_doors {
+	margin-top: 10px;
+}
+
+.windanddoors-tabs__caption {
+  justify-content: flex-start;
+  margin-top: 34px;
+  margin-bottom: 46px;
+}
+
+.windanddoors-tabs__text {
+  margin-left: 20px;
+  margin-bottom: 28px;
+  line-height: 1.4;
+}
+
+.windanddoors-tabs__text_hide {
+  display: none;
+}
+
+.windanddoors-tabs__text_second {
+  width: 640px;
+}
+
+.windanddoors-tabs__text_fourth {
+  width: 670px;
+}
+
+.windanddoors-buttons {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin-top: 31px;
+}
+
+.windanddoors-buttons_more {
+  margin-right: 35px;
+}
+
+/* ------- Comfort section ------- */
+
+.comfort {
+  padding-top: 102px;
+  padding-bottom: 89px;
+}
+
+.comfort__text {
+  text-align: center;
+  width: 917px;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+.comfort__text_hide {
+  display: none;
+}
+
+.comfort__buttons {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+}
+
+/* ------- Safety section ------- */
+
+.safety {
+  background: #f6f6f6;
+  padding-top: 94px;
+  text-align: center;
+  padding-bottom: 59px;
+}
+
+.safety__title {
+  color: #a00000;
+  margin-bottom: 50px;
+}
+
+.safety__card {
+  margin-bottom: 37px;
+}
+
+.safety__subtitle {
+  color: #a00000;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: 'TTTravels-DemiBold';
+  margin-bottom: 18px;
+}
+
+.safety__text {
+  width: 768px;
+  margin: 0 auto;
+}
+
+/* ------- Service section ------- */
+
+.service {
+  padding-top: 95px;
+}
+
+.service__title {
+  margin-bottom: 38px;
+}
+
+.service__text {
+  width: 570px;
+  margin-bottom: 47px;
+}
+
+.service__subtitle {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: 'TTTravels-Bold';
+  margin-bottom: 32px;
+}
+
+.service__item {
+  margin-bottom: 15px;
+  position: relative;
+  margin-left: 30px;
+}
+
+.service__item:before {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #b12f2f;
+  opacity: 0.302;
+  border-radius: 50%;
+  position: absolute;
+  top: 13px;
+  left: -20px;
+}
+
+/* ------- Works (windows and doors) section ------- */
+
+.works-windanddoors {
+  padding-top: 70px;
+  padding-bottom: 105px;
+}
+
+/* ------- Order (windows and doors) section ------- */
+
+.windows-order {
+  background: url(../img/bg-order.jpg) no-repeat center top / cover;
+}
+
+.order__overlay {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.36);
+}
+
+.order__title {
+  color: #fff;
+}
+
+/* ------- BALCONIES PAGE ------- */
+
+/* ------- Header section ------- */
+
+.header-balconies {
+  background: url(../img/bg-balconies.jpg) no-repeat center top / cover;
+  padding-top: 18vh;
+}
+
+/* ------- Information section ------- */
+
+.information {
+  padding-top: 91px;
+}
+
+.information__text {
+  text-align: center;
+  margin: 0 auto;
+  width: 945px;
+  line-height: 1.4;
+  margin-top: 49px;
+}
+
+.information__text_hide {
+  display: none;
+}
+
+.information__text_nomargin {
+  margin-top: 0;
+}
+
+.information-buttons_more {
+  margin: 0 auto;
+  margin-top: 43px;
+}
+
+/* ------- works (balconies) section ------- */
+
+.works-balkonies {
+  padding-top: 93px;
+  padding-bottom: 110px;
+}
+
+#grid_seventh {
+  height: auto;
+}
+
+.grid-item_shadow {
+  /*box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.11);*/
+}
+
+/* ------- order (balconies) section ------- */
+
+.balconies-order {
+  background: url(../img/bg-order-balconies.jpg) no-repeat center top / cover;
+}
+
+
+/* ------- COTTAGES PAGE ------- */
+
+/* ------- Header section ------- */
+
+.header-cottages {
+  background: url(../img/bg-cottages.jpg) no-repeat center top / cover;
+/*  padding-top: 334px;
+  padding-bottom: 344px;*/
+  padding-top: 23vh;
+}
+
+.header-secondary__subtitle_cottages {
+  padding-bottom: 28px;
+}
+
+.header-main__btn_cottages {
+  margin-top: 30px;
+}
+
+/* ------- Glazing section ------- */ 
+
+.glazing {
+  padding-top: 74px;
+  padding-bottom: 105px;
+}
+
+.glazing__title {
+  margin-bottom: 56px;
+}
+
+.glazing__text {
+  line-height: 1.5;
+}
+
+.cottages-buttons {
+  margin-top: 24px;
+}
+
+.cottages-slider {
+  margin-top: 8px;
+}
+
+.cottages-slider .slick-dots {
+  position: relative;
+}
+
+/*.cottages-slider .slick-dots:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background-color: rgb(160, 0, 0);
+  opacity: 0.302;
+  left: 0px;
+  top: 29px;
+}*/
+
+/*.cottages-slider .slick-dots li {
+  width: 79px;
+}*/
+
+/*.cottages-slider .slick-dots li button::before {
+  content: '';
+  width: 91px;
+  height: 12px;
+  background: transparent;
+  margin: 0 auto;
+  opacity: 0;
+}*/
+
+/*.cottages-slider .slick-dots li.slick-active button::before {
+  content: '';
+  width: 91px;
+  height: 12px;
+  background: #b12f2f;
+  margin: 0 auto;
+  margin-top: 5px;
+  opacity: 1;
+}*/
+
+/*.cottages-slider .slick-dots li button {
+  width: 0;
+  height: 0;
+  padding: 0;
+}*/
+
+/* ------- works (cottages) section ------- */ 
+
+.works-cottages {
+  background: #f9f9f9;
+  padding-top: 95px;
+  padding-bottom: 96px;
+}
+
+.works-cottages__title {
+  margin-bottom: 40px;
+}
+
+/* ------- order (cottages) section ------- */ 
+
+.cottages-order {
+  background: url(../img/bg-order-cottages.jpg) no-repeat center top / cover;
+}
+
+/* ------- JOBS STYLES ------- */
+
+/* ------- Header section ------- */
+
+.header-jobs {
+  background: url(../img/bg-jobs.jpg) no-repeat center top / cover;
+/*  padding-top: 427px;
+  padding-bottom: 415px;*/
+  height: calc(100vh - 183px);
+  padding-top: 33vh;
+}
+
+/* ------- jobs section ------- */
+
+.jobs {
+  padding-top: 94px;
+}
+
+.jobs__title {
+  margin-bottom: 53px;
+}
+
+.jobs__name {
+  text-align: left;
+  font-size: 28px;
+  margin-bottom: 41px;
+}
+
+.jobs__subtitle {
+  font-size: 24px;
+  font-family: 'TTTravels-DemiBold';
+  text-align: left;
+}
+
+.jobs__item {
+  width: 1170px;
+  margin: 0 auto;
+  padding-bottom: 53px;
+  padding-top: 77px;
+}
+
+.jobs__item:first-child {
+  padding-top: 0;
+}
+
+.jobs__description {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.jobs__requirement, .jobs__conditions {
+  width: 50%;
+}
+
+.jobs__conditions {
+  padding-left: 20px;
+}
+
+.jobs__point {
+  margin-left: 33px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.jobs__point:before {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #9c9c9c;
+  opacity: 0.302;
+  border-radius: 50%;
+  position: absolute;
+  top: 11px;
+  left: -20px;
+}
+
+.jobs-phone, .jobs-email {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin-left: 14px;
+}
+
+.jobs-phone {
+  margin-top: 22px;
+}
+
+.jobs-email {
+  margin-top: 15px;
+}
+
+.jobs-phone__text, .jobs-email__text {
+  font-family: 'TTTravels-Bold';
+  margin-right: 8px;
+}
+
+.jobs-phone__link, .jobs-email__link {
+  color: #000;
+}
+
+.jobs-phone__link:hover, .jobs-email__link:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* ------- FORM STYLES ------- */
+
+.form {
+  background: #f6f6f6;
+  margin-top: 60px;
+  padding-top: 46px;
+  padding-bottom: 45px;
+}
+
+.form__subtitle, .form__call {
+  display: block;
+  text-align: center;
+  font-family: 'TTTravels-Thin';
+}
+
+.form-content {
+  padding-left: 62px;
+  padding-right: 64px;
+  margin-top: 37px;
+  margin-bottom: 24px;
+}
+
+.form-content form {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.form-content input {
+  color: #696969;
+  font-family: 'TTTravels-Thin';
+  border: none;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.08);
+  width: 329px;
+  height: 55px;
+  margin-right: 30px;
+  padding: 0 20px;
+}
+
+.form-content input::placeholder {
+  color: #696969;
+}
+
+.form-content input:focus {
+  color: #000;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.38);
+}
+
+.form__tel {
+  display: block;
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+
+.popup-form {
+  margin-top: 0;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.08);
+}
+
+.popup-thanks {
+  background: #f6f6f6;
+  width: 1170px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.08);
+  padding-top: 43px;
+  padding-bottom: 51px;
+}
+
+.popup-thanks__title {
+  margin-bottom: 27px;
+}
+
+/* ------- Media Queries ------- */
+
+/* 992 - 1199 px */
+@media screen and (max-width: 1199px) {
+  #header-fixed.sticky .header-top {
+    padding-bottom: 7px;
+  }
+  #header-fixed.sticky .menu__link {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .header-top {
+    padding-bottom: 40px;
+  }
+  .about__text, .counsellor__text, .reviews-slider__text, .about-card__item, .about-card__btn, .footer-info__confidential, .footer-info__sale {
+    width: auto;
+  }
+  .consultation__btn {
+    width: 260px;
+  }
+  .consultation input {
+    width: 270px;
+  }
+/*  .reviews-slider .slick-dots:before {
+    left: 240px;
+  }*/
+  .grid {
+    height: auto;
+  }
+  .footer-contacts__tel {
+    font-size: 18px;
+  }
+  .windanddoors__img img {
+    margin-left: 0;
+  }
+  .service__text, .comfort__text {
+    width: auto;
+  }
+ /* .cottages-slider .slick-dots li {
+    width: 60px;
+  }*/
+  .jobs__item {
+    width: 960px;
+  }
+  .header {
+    padding-top: 170px;
+  }
+  #header-fixed.sticky .menu-open {
+    margin-top: 32px;
+  }
+  .windanddoors-tabs__text_second, .windanddoors-tabs__text_fourth {
+  	width: auto;
+  }
+  .footer__brands {
+  	margin-left: -22px;
+  }
+}
+
+/* 768 - 991 px */
+@media screen and (max-width: 991px) {
+  .consultation form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .consultation__btn {
+    width: 200px;
+  }
+  .consultation input {
+    width: 235px;
+  }
+  .grid {
+    margin-left: -36px;
+  }
+  .grid-item {
+    width: 35%;
+  }
+/*  .reviews-slider .slick-dots:before {
+    left: 117px;
+  }*/
+  .reviews-slider__text {
+    font-size: 18px;
+  }
+  .reviews-slider__img {
+    margin-top: 69px;
+  }
+  .footer__offer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+  }
+  .footer-contacts {
+    margin-top: 0;
+  }
+  .footer-developer {
+    margin-top: 5px;
+  }
+  .footer-contacts__tel {
+    font-size: 17px;
+  }
+  .footer-developer {
+    font-size: 15px;
+  }
+  .footer-info {
+    margin-top: 40px;
+  }
+  .footer__brands {
+    margin-top: 77px;
+    margin-left: 0;
+  }
+  .information__text {
+    width: auto;
+  }
+  .form-content {
+    padding: 0 30px;
+  }
+  .form-content input {
+    width: 200px;
+    margin-right: 20px;
+  }
+  .windanddoors__img img {
+    width: 100%;
+  }
+  .safety__text {
+    width: auto;
+  }
+/*  .cottages-slider .slick-dots li {
+    width: 13px;
+  }*/
+  .glazing .slick-slide img {
+    margin: 0 auto;
+  }
+  .jobs__item {
+    width: 720px;
+  }
+}
+
+/* 576 - 767 px */
+@media screen and (max-width: 767px) {
+  .about-card__item, .about-card__btn {
+    width: 370px;
+    margin: 0 auto;
+  }
+  .about-card__item {
+    margin-bottom: 20px;
+  }
+  .about-card {
+    margin-bottom: 55px;
+  }
+  .counsellor__img {
+    width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .counsellor__title {
+    margin-left: 0;
+  }
+  .counsellor__text {
+    font-size: 18px;
+    text-align: justify;
+  }
+  .consultation form {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+  }
+  .consultation input, .consultation__btn {
+    width: 80%;
+  }
+  .consultation input {
+    margin-bottom: 20px;
+  }
+  .tabs__caption li {
+    font-size: 15px;
+  }
+  .grid {
+    -ms-align-items: center;
+    align-items: center;
+  }
+  .reviews-slider__item {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+  }
+/*  .reviews-slider .slick-dots:before {
+    left: 28px;
+    width: 460px;
+  }*/
+  .reviews-slider__img {
+    margin-top: 24px;
+    margin-right: 0;
+  }
+  .reviews-slider__content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+  }
+  .reviews-slider__text {
+    text-align: justify;
+  }
+  .footer__logo img {
+    width: 93%;
+  }
+/*  .footer-developer {
+    display: none;
+  }*/
+  .footer-info__confidential {
+    margin-left: 0;
+  }
+  .footer-info__sale {
+    margin-top: 40px;
+  }
+  .footer__brands {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 17px;
+  }
+  .works-balkonies .tabs__caption li {
+    padding: 0 16px;
+  }
+  .form-content form {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+  }
+  .form-content input {
+    width: 85%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .form-content button {
+    width: 85%;
+  }
+  .windanddoors__img {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+  .windanddoors-tabs__text {
+    margin-left: 0;
+  }
+  .windanddoors-tabs__caption {
+    justify-content: center;
+  }
+  .service-buttons {
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+  .service__subtitle {
+    text-align: center;
+  }
+  .cottages-buttons .works-buttons__order {
+    margin: 0 auto;
+    margin-bottom: 77px;
+  }
+/*  .cottages-slider .slick-dots li {
+    width: 85px;
+  }*/
+  .jobs__item {
+    width: 540px;
+  }
+  .footer-more {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+  }
+  .windanddoors__files {
+	text-align: center;
+  }
+}
+
+/* 320 - 575 px */
+@media screen and (max-width: 575px) {
+  .slick-arrow {
+    display: none !important;
+  }
+  .grid {
+    display: block;
+    margin-left: 0;
+    max-height: none;
+    text-align: center;
+  }
+  .grid-item {
+    width: 80%;
+  }
+  .works-buttons__more, .works-buttons__order {
+    width: 200px;
+  }
+  .header-contacts {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    margin-top: 64px;
+  }
+  .menu-open {
+    /*margin-right: 10px;*/
+  }
+  .windanddoors-buttons {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+  }
+  .jobs__item {
+    width: 95%;
+  }
+  .jobs__description {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+  }
+  .jobs__name {
+    text-align: center;
+  }
+  .jobs__requirement {
+    padding-bottom: 40px;
+  }
+  .jobs__subtitle {
+    text-align: center;
+    padding-bottom: 17px;
+  }
+  .jobs__point {
+    margin-left: 0;
+    font-size: 18px;
+  }
+  .jobs-phone, .jobs-email {
+    justify-content: center;
+  }
+  .jobs__conditions {
+    padding-left: 0;
+  }
+  .jobs__requirement, .jobs__conditions {
+    width: 72%;
+  }
+  #header-fixed.sticky .header-contacts {
+  margin-top: 15px;
+}
+
+/* 320 - 532 px */
+@media screen and (max-width: 532px) {
+  .tabs__caption li {
+    font-size: 13px;
+    padding: 0 11px;
+  }
+  .header-main {
+    padding-top: 200px;
+  }
+  .header-contacts__tel {
+  	font-size: 18px;
+  }
+/*  .reviews-slider .slick-dots:before {
+    left: 4%;
+    width: 90%;
+  }*/
+/*  .reviews-slider .slick-dots li {
+    width: 14%;
+  }*/
+}
+
+/* 320 - 510 px */
+@media screen and (max-width: 510px) {
+/*  .cottages-slider .slick-dots li {
+    width: 61px;
+  }*/
+}
+
+/* 320 - 480 px */
+@media screen and (max-width: 480px) {
+  .header-top__logo img {
+    width: 150px;
+  }
+  .header-top__logo {
+    margin-top: 60px;
+  }
+  .header-contacts__tel {
+    font-size: 16px;
+    margin-right: 0;
+  }
+  .works-buttons {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+  }
+  .works-buttons__more {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .header-cards {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    margin-top: 90px;
+  }
+  .header-cards__item {
+    width: 141px;
+    height: 141px;
+  }
+  .header-cards__item_second {
+    border-top: none;
+    border-bottom: none;
+    border-right: 8px solid rgba(249, 249, 249, 0.651);
+    border-left: 8px solid rgba(249, 249, 249, 0.651);
+    height: 125px;
+  }
+  .header-main {
+    padding-top: 137px;
+  }
+  .header-contacts {
+    width: auto;
+    margin-left: -20px !important;
+  }
+  .header-contacts__tel {
+    font-size: 15px;
+  }
+  .header-top__logo img {
+    width: 125px;
+  }
+  .menu-open {
+    margin-top: 67px;
+  }
+  .about-card__item, .about-card__btn {
+    width: 93%;
+  }
+  .counsellor {
+    padding-top: 50px;
+  }
+/*  .reviews-slider .slick-dots li {
+    width: 11%;
+  }*/
+  .footer__logo img {
+    width: 150px;
+  }
+  .footer-contacts__tel {
+    font-size: 13px;
+    margin-top: 8px;
+  }
+  .works-balkonies .tabs__caption li {
+    padding: 0 9px;
+  }
+  .header-secondary__title_sale {
+    font-size: 41px;
+  }
+  .header {
+    padding-top: 147px;
+  }
+  .footer-developer {
+    font-size: 12px;
+  }
+  #header-fixed.sticky .header-top__logo {
+    margin-top: 14px;
+  }
+  #header-fixed.sticky .menu-open {
+    margin-top: 24px;
+  }
+  #header-fixed.sticky .header-contacts__tel {
+    margin-top: 0;
+  }
+}
+
+/* 320 - 1250 px */
+@media screen and (max-width: 1250px) {
+  .windanddoors-tabs__text {
+    width: 100%;
+  }
+}
+
+/* 320 - 501 px */
+@media screen and (max-width: 501px) {
+  .windanddoors-buttons, .comfort__buttons {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+  }
+  .windanddoors-buttons_more {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .windanddoors-buttons .works-buttons__order, .comfort__buttons .works-buttons__order {
+    width: 221px;
+  }
+  .header-secondary {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .header-jobs {
+    padding-top: 160px;
+  }
+}
+
+/* 320 - 480 px */
+@media screen and (max-width: 480px) {
+  .works-balkonies .tabs__caption li {
+    padding: 0 6px;
+    font-size: 12px;
+  }
+}
+
+/* 320 - 428 px */
+@media screen and (max-width: 428px) {
+  .glazing .slick-slide img {
+    width: 100%;
+  }
+/*  .cottages-slider .slick-dots li button::before {
+    width: auto;*/
+  }
+/*  .cottages-slider .slick-dots li.slick-active button::before {
+    width: 40px;
+  }*/
+}
+
+/* 320 - 400 px */
+@media screen and (max-width: 400px) {
+  .header-secondary__title_sale {
+    font-size: 38px;
+  }
+  .service__title {
+    font-size: 33px;
+  }
+  .header-secondary__title_cottages {
+    font-size: 42px;
+  }
+}
+
+/* 320 - 394 px */
+@media screen and (max-width: 394px) {
+  .works-balkonies .tabs__caption li {
+    padding: 0 5px;
+    font-size: 11px;
+  }
+  .header-contacts__tel {
+  	font-size: 14px;
+  }
+/*  .cottages-slider .slick-dots li {
+    width: 45px;
+  }*/
+}
+
+/* 320 - 371 px */
+@media screen and (max-width: 371px) {
+  .header-secondary__title_sale {
+    font-size: 36px;
+  }
+  .header-secondary__title_jobs {
+    font-size: 40px;
+  }
+  .header-contacts__tel {
+  	font-size: 13px;
+  }
+}
+
+/* 320 - 364 px */
+@media screen and (max-width: 364px) {
+  .works-balkonies .tabs__caption li {
+    padding: 0 5px;
+    font-size: 10px;
+  }
+  .menu-open {
+    margin-right: 0;
+    margin-left: -20px;
+  }
+  .header-secondary__title_cottages {
+    font-size: 37px;
+  }
+}
+
+/* 320 - 353 px */
+@media screen and (max-width: 353px) {
+  .header-secondary__title_sale {
+    font-size: 34px;
+  }
+  .safety__title {
+    font-size: 33px;
+  }
+  .service__title {
+    font-size: 30px;
+  }
+  .footer__logo img {
+    margin-left: -10px;
+  }
+  .header-contacts__tel {
+  	font-size: 12px;
+  }
+  .header-top__logo img {
+  	width: 110px;
+  }
+}
+
+/* 320 - 338 px */
+@media screen and (max-width: 338px) {
+  .works-balkonies .tabs__caption li {
+    padding: 0 4px;
+    font-size: 9px;
+  }
+  .header-secondary__title_sale, .safety__title {
+    font-size: 32px;
+  }
+  .service__title {
+    font-size: 29px;
+  }
+  .jobs-phone__link {
+    font-size: 18px;
+  }
+}
+
+/* 320 - 390 px */
+@media screen and (max-width: 390px) {
+  .footer__brands {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+  }
+  .counsellor__img {
+    width: 280px;
+  }
+  .tabs__caption li {
+    padding: 0 7px;
+  }
+}
+
+/* 320 - 326px */
+@media screen and (max-width: 326px) {
+  .works .tabs__caption li {
+    font-size: 11px;
+}
+
+/* 320 - 350 px */
+@media screen and (max-width: 350px) {
+  .tabs__caption li {
+    font-size: 12px;
+  }
+  .header-contacts__tel {
+    font-size: 12px;
+  }
+  .footer__logo img {
+    width: 130px;
+  }
+  .header-contacts {
+    margin-left: -10px !important;
+  }
+  .header-contacts__tel {
+    font-size: 11px;
+  }
+}
+
+/* 320 - 322 px */
+@media screen and (max-width: 322px) {
+  .header-contacts {
+    margin-left: -11px !important;
+  }
+}
+
+/*992 - 1060 px*/
+@media screen and (min-device-width: 992px) and (max-device-width: 1060px) {
+  .footer__brands {
+    margin-left: -30px;
+  }
+}
